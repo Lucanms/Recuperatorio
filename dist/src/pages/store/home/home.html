@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Store - Catálogo</title>
+  <script type="module" crossorigin src="../../../../assets/storeHome-DSW6DtOR.js"></script>
+  <link rel="modulepreload" crossorigin href="../../../../assets/style-CRmhdmR1.js">
+  <link rel="modulepreload" crossorigin href="../../../../assets/cart-B-FxUK_R.js">
+  <link rel="modulepreload" crossorigin href="../../../../assets/navigate-CRyE9z3x.js">
+  <link rel="modulepreload" crossorigin href="../../../../assets/auth-CNnhbkTO.js">
+  <link rel="stylesheet" crossorigin href="../../../../assets/style-CQ2ID1Fy.css">
+</head>
+
+<body>
+  <header class="store-header">
+    <h1 class="store-logo">Food Store</h1>
+    <nav class="store-nav">
+      <a href="/src/pages/store/cart/cart.html" class="cart-link" id="cartLink">
+        Carrito (<span id="cartCount">0</span>)
+      </a>
+      <button id="logoutButton" class="btn-logout">Salir</button>
+    </nav>
+  </header>
+
+  <div class="store-layout">
+    <aside class="sidebar">
+      <h3>Categorías</h3>
+      <ul class="category-list" id="categoryList">
+        <li><button class="category-btn active" data-category="all">Todos</button></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar productos por nombre..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="product-grid" id="productGrid">
+      </div>
+
+      <p class="no-results" id="noResults" style="display: none;">
+        No se encontraron productos para tu búsqueda.
+      </p>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+</body>
+
+</html>

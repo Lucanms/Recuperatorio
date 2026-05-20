@@ -1,0 +1,1 @@
+import"./style-CRmhdmR1.js";import{l as o,c as t}from"./auth-CNnhbkTO.js";import"./navigate-CRyE9z3x.js";const e=document.getElementById("logoutButton");e?.addEventListener("click",()=>{o()});const n=()=>{console.log("inicio de pagina"),t("/src/pages/auth/login/login.html","/src/pages/client/home/home.html","admin")};n();

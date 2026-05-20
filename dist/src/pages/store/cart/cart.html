@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Store - Carrito</title>
+  <script type="module" crossorigin src="../../../../assets/storeCart-FsO82S_k.js"></script>
+  <link rel="modulepreload" crossorigin href="../../../../assets/style-CRmhdmR1.js">
+  <link rel="modulepreload" crossorigin href="../../../../assets/cart-B-FxUK_R.js">
+  <link rel="stylesheet" crossorigin href="../../../../assets/style-CQ2ID1Fy.css">
+</head>
+
+<body>
+  <header class="store-header">
+    <h1 class="store-logo">Food Store</h1>
+    <nav class="store-nav">
+      <a href="/src/pages/store/home/home.html" class="cart-link">
+        ← Volver al catálogo
+      </a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <h2>Tu Carrito</h2>
+
+    <div class="cart-items" id="cartItems">
+    </div>
+
+    <p class="empty-cart" id="emptyCart" style="display: none;">
+      El carrito está vacío.
+    </p>
+
+    <div class="cart-summary" id="cartSummary" style="display: none;">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
