@@ -55,3 +55,7 @@ export function getCartTotal(): number {
 export function getCartCount(): number {
   return getCart().reduce((count, item) => count + item.quantity, 0);
 }
+
+export function clearCart(): void {
+  localStorage.removeItem(CART_KEY);
+}

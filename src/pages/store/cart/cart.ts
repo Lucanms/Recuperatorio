@@ -3,6 +3,7 @@ import {
   removeFromCart,
   updateQuantity,
   getCartTotal,
+  clearCart,
 } from "../../../utils/cart";
 
 const cartItemsEl = document.getElementById("cartItems") as HTMLDivElement;
@@ -11,6 +12,14 @@ const cartSummaryEl = document.getElementById(
   "cartSummary"
 ) as HTMLDivElement;
 const cartTotalEl = document.getElementById("cartTotal") as HTMLSpanElement;
+const clearCartBtn = document.getElementById(
+  "clearCartBtn"
+) as HTMLButtonElement;
+
+clearCartBtn.addEventListener("click", () => {
+  clearCart();
+  renderCart();
+});
 
 function renderCart(): void {
   const cart = getCart();

@@ -140,6 +140,18 @@ function renderCategories(): void {
   }
 }
 
+const todosBtn = document.querySelector(
+  '[data-category="all"]'
+) as HTMLButtonElement;
+todosBtn.addEventListener("click", () => {
+  document
+    .querySelectorAll(".category-btn")
+    .forEach((b) => b.classList.remove("active"));
+  todosBtn.classList.add("active");
+  currentCategory = "all";
+  renderProducts();
+});
+
 searchInput.addEventListener("input", () => {
   currentSearch = searchInput.value.trim();
   renderProducts();
