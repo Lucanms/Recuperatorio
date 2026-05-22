@@ -16,15 +16,21 @@ body {
 
 /* ========== HEADER ========== */
 .store-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #d32f2f;
   color: #fff;
   padding: 12px 24px;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.store-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .store-logo {
